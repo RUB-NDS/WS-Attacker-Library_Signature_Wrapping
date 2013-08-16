@@ -22,11 +22,11 @@ import wsattacker.library.signatureWrapping.util.exception.InvalidTypeException;
 import wsattacker.library.signatureWrapping.xpath.parts.predicate.AndExpression;
 import wsattacker.library.signatureWrapping.xpath.parts.util.XPathInspectorTools;
 
-public abstract class FunctionAndExpression extends AndExpression {
+public abstract class AbstractFunctionAndExpression extends AndExpression {
 
     protected String functionName, value;
 
-    public FunctionAndExpression(String expression, String functionName) throws InvalidTypeException {
+    public AbstractFunctionAndExpression(String expression, String functionName) throws InvalidTypeException {
         super(expression);
         this.functionName = functionName;
         String functionNameEq = functionName + "=";
