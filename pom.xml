@@ -6,6 +6,8 @@
     <artifactId>Signature_Wrapping_Library</artifactId>
     <name>WS-Attacker-Library_Signature_Wrapping</name>
     <inceptionYear>2013</inceptionYear>
+    <groupId>wsattacker.library</groupId>
+    <version>1.9-SNAPSHOT</version>
 
     <developers>
         <developer>
@@ -21,14 +23,6 @@
             </roles>
         </developer>
     </developers>
-
-    <parent>
-        <groupId>wsattacker.library</groupId>
-        <artifactId>wsattacker-libraries</artifactId>
-        <version>1.9-SNAPSHOT</version>
-    </parent>
-
-    <!-- For WsuURIDereferencer: XMLSignatureInput, ApacheOctetStreamData, ApacheNodeSetData -->
 
     <dependencies>
         <dependency>
@@ -52,6 +46,12 @@
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
             <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
