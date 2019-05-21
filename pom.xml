@@ -2,11 +2,10 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>Signature_Wrapping_Library</artifactId>
+    <groupId>wsattacker.library</groupId>
+    <artifactId>Signature_Wrapping</artifactId>
     <name>WS-Attacker-Library_Signature_Wrapping</name>
     <inceptionYear>2013</inceptionYear>
-    <groupId>wsattacker.library</groupId>
     <version>1.10</version>
 
     <developers>
@@ -23,13 +22,19 @@
             </roles>
         </developer>
     </developers>
+    
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>wsattacker.library</groupId>
-            <artifactId>Schema_Analyzer_Library</artifactId>
+            <groupId>com.github.rub-nds</groupId>
+            <artifactId>WS-Attacker-Library_Schema_Analyzer</artifactId>
             <version>1.10</version>
-            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.apache.ws.security</groupId>
@@ -58,6 +63,7 @@
             <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
+                <version>3.0</version>
                 <configuration>
                     <properties>
                         <owner>Christian Mainka</owner>
